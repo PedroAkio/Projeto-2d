@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robô 2D Transformável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Robô 2D Transformável</h1>
+
+        <p class="descricao">
+            Projeto de Computação Gráfica - Transformações 2D
+        </p>
+
+        <canvas id="canvas" width="1000" height="600"></canvas>
+
+        <div class="controles">
+            <h2>Controles</h2>
+
+            <div class="controle-grid">
+                <div>
+                    <strong>Movimentação</strong>
+                    <p>W / ↑ = Frente</p>
+                    <p>S / ↓ = Trás</p>
+                    <p>A / ← = Esquerda</p>
+                    <p>D / → = Direita</p>
+                </div>
+
+                <div>
+                    <strong>Transformações</strong>
+                    <p>Q = Girar para esquerda</p>
+                    <p>E = Girar para direita</p>
+                    <p>Z = Diminuir</p>
+                    <p>X = Aumentar</p>
+                </div>
+
+                <div>
+                    <strong>Interação</strong>
+                    <p>R = Reflexão horizontal</p>
+                    <p>C = Cisalhamento</p>
+                    <p>Espaço = Animação</p>
+                    <p>Mouse = Mover robô</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="informacoes">
+            <span id="statusAnimacao">Animação: ATIVADA</span>
+            <span id="statusReflexao">Reflexão: DESATIVADA</span>
+            <span id="statusCisalhamento">Cisalhamento: DESATIVADO</span>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
